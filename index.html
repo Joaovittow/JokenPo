@@ -1,25 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JokenPô</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-    
-    <div class="container">
-    
-        <h1>JokenPô</h1>
-        
-        <button id="rock">&#x1f44a;</button>
-        <button id="paper">&#x1f590;</button>
-        <button id="scissors">&#x270c;</button>
-        
-        <p>Sua Pontuação: <span>0</span></p>
-        <p>Pontuação da Alexa: <span>0</span></p>
-        
-    </div>
+<html lang="pt-br">
 
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>JokenPô</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1>JokenPô</h1>
+    
+    <div class="buttons">
+      <button id="rock" onclick="player('rock')">&#x1f44a;</button>
+      <button id="paper" onclick="player('paper')">&#x1f590;</button>
+      <button id="scissors" onclick="player('scissors')">&#x270c;</button>
+    </div>
+    
+    <p class="result"></p>
+    
+    <p class="user-score">Sua Pontuação: <span id="user-score">0</span></p>
+    <p class="machine-score">Pontuação da Alexa: <span id="machine-score">0</span></p>
+
+  </div>
+
+  <script src="main.js"></script>
 </body>
+
 </html>
